@@ -1,3 +1,20 @@
 import UIKit
+protocol Car {
+    func start()
+}
 
-var str = "Hello, playground"
+extension Car {
+    func start() {
+        print("starting...")
+    }
+}
+class MyClass: Car {
+//    func start() {
+//        print("STARTING...")
+//    }
+}
+
+
+let myClass = MyClass()
+
+myClass.start()
